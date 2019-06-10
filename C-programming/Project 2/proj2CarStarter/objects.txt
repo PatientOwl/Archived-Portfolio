@@ -1,0 +1,9 @@
+RedCar,10,12,65.0,0,car
+BlueCar,14,5,45.0,270,car
+Bus,8,10,55.0,90,car
+Police1,18,10,55.0,180,police
+Tree1,22,2,0.0,180,tree
+Tree2,4,8,0.0,180,tree
+Tree3,12,12,0.0,180,tree
+Tree4,14,8,0.0,180,tree
+Mattress1,20,12,0.0,180,obstacle

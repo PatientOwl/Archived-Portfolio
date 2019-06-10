@@ -1,0 +1,106 @@
+#lang scheme
+; Project 4 test data
+(provide test-remove-last-negative)
+(provide test-distance)
+(provide test-remove-dups)
+(provide test-squares-up-to)
+(provide test-election-results)
+
+(define test-remove-last-negative
+  (lambda (x)
+  (begin
+    (write "Question 1: remove-last-negative ")(newline)
+    (write (x '(1 -2 4 8)))(newline)
+    (write (x '(1 2 3 4)))(newline)
+    (write (x '(-1 -2 -3 -4 -5 1)))(newline)
+    (write (x '(-1 -2 -3 -4 -5)))(newline)
+    )))
+
+(define test-distance
+  (lambda (x)
+  (begin
+    (write "Question 2: distance")(newline)
+    (write (x '(1 . 4) '(7 . 12)))(newline)
+    (write (x '(-2 . 8) '(3 . -4)))(newline)
+    )))
+   
+(define test-remove-dups
+  (lambda (x)
+  (begin
+    (write "Question 3: remove-dups ")(newline)
+    (write (x '(a b c d)))(newline)
+    (write (x '(n n n o o o o t b r r r o k e e e e !)))(newline)
+    (write (x '(T T T T T T T T T T T)))(newline)
+    )))
+
+(define test-squares-up-to
+  (lambda (x)
+  (begin
+    (write "Question 4: squares-up-to")(newline)
+    (write (x 50))(newline)
+    (write (x 23))(newline)
+    (write (x 1))(newline)
+    (write (x 300))(newline)
+    )))
+
+(define test-election-results
+  (lambda (x)
+  (begin
+    (write "Question 5: election-results")(newline)
+    (write (x state-by-state))(newline)
+    )))
+ 
+; 2000 US Presidental Election results
+(define state-by-state '(
+    (9 . (941173 . 692611))
+    (3 . (167398 . 79004))
+    (8 . (781652 . 685341))
+    (6 . (472940 . 422768))
+    (54 . (4567429 . 5861203))
+    (8 . (883748 . 738227))
+    (8 . (561094 . 816015))
+    (3 . (137288 . 180068))
+    (2 . (18073 . 171923))
+    (25 . (2912790 . 2912253))
+    (13 . (1419720 . 1116230))
+    (4 . (137845 . 205286))
+    (4 . (336937 . 138637))
+    (22 . (2019421 . 2589026))
+    (12 . (1245836 . 901980))
+    (7 . (634373 . 638517))
+    (6 . (622332 . 399276))
+    (8 . (872492 . 638898))
+    (9 . (927871 . 792344))
+    (4 . (286616 . 319951))
+    (10 . (813797 . 1145782))
+    (12 . (878502 . 1616487))
+    (18 . (1953139 . 2170418))
+    (10 . (1109659 . 1168266))
+    (7 . (572844 . 404614))
+    (11 . (1189924 . 1111138))
+    (3 . (240178 . 137126))
+    (5 . (433862 . 231780))
+    (4 . (301575 . 279978))
+    (4 . (273559 . 266348))
+    (15 . (1284173 . 1788850))
+    (5 . (286417 . 286783))
+    (33 . (2403374 . 4107697))
+    (14 . (1631163 . 1257692))
+    (3 . (174852 . 95284))
+    (21 . (2351209 . 2186190))
+    (8 . (744337 . 474276))
+    (7 . (713577 . 720342))
+    (23 . (2281127 . 2485967))
+    (4 . (130555 . 249508))
+    (8 . (785937 . 565561))
+    (3 . (190700 . 118804))
+    (11 . (1061949 . 981720))
+    (32 . (3799639 . 2433746))
+    (5 . (515096 . 203053))
+    (3 . (119775 . 149022))
+    (13 . (1437490 . 1217290))
+    (11 . (1108864 . 1247652))
+    (5 . (336475 . 295497))
+    (11 . (1237279 . 1242987))
+    (3 . (147947 . 60481))
+    ))
